@@ -19,4 +19,5 @@ The analysis involves preprocessing and transforming the input data, training a 
 The overall results of this deep learning model was not up to par in hitting the target accuracy of 75%, although it was close. <br>
 In a different attempt I would recommend using RandomForest to solve this classification problem for the following reasons: <br> 
 1) Handling categorical features: Random Forest handles categorical features naturally without requiring one-hot encoding. This can be advantageous when working with categorical variables like 'APPLICATION_TYPE' and 'CLASSIFICATION' in the dataset. <br>
-2) 
+2) Feature importance: Random Forest provides a feature importance ranking, which helps in identifying the most influential features for predicting success. <br>
+3) Handling imbalanced data: Random Forest can handle imbalanced datasets effectively. <br>
