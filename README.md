@@ -1,9 +1,9 @@
-## Overview of the analysis:
+## Overview of the analysis
 The purpose of this analysis is to build a machine learning model that predicts whether applicants to the charity organization Alphabet Soup will be successful in receiving funding. <br>
 The analysis involves preprocessing and transforming the input data, training a deep neural network model, evaluating, and optimizing its performance.
 
-## Results: 
-**Data Prepcrocessing**: <br>
+## Results
+**Data Prepcrocessing** <br>
 • The target for this model is the 'IS_SUCCESSFUL' column <br>
 • The features include all columns in the dataset excluding the target column, 'NAME', 'EIN', and 'STATUS' <br>
 • 'NAME' and 'EIN' are neither targets nor features so they were removed from input data <br>
@@ -14,3 +14,9 @@ The analysis involves preprocessing and transforming the input data, training a 
 <br>
 • The optimized model reached a 74% accuracy at its peak, which failed to hit the target accuray of 75%. <br>
 ![alt text](https://github.com/jstnkuo/Deep-Learning-Classifier/blob/main/images/optimized_accuracy.png) <br>
+• My attempts to increase model performance included removing unncessary features, adding another hidden layer, increasing epochs, and changing numbers of neurons. <br>
+## Summary
+The overall results of this deep learning model was not up to par in hitting the target accuracy of 75%, although it was close. <br>
+In a different attempt I would recommend using RandomForest to solve this classification problem for the following reasons: <br> 
+1) Handling categorical features: Random Forest handles categorical features naturally without requiring one-hot encoding. This can be advantageous when working with categorical variables like 'APPLICATION_TYPE' and 'CLASSIFICATION' in the dataset. <br>
+2) 
